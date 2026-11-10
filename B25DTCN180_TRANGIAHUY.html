@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Trần Gia Huy</title>
+    <link rel="stylesheet" href="B25DTCN180_TRANGIAHUY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./Screenshot 2026-11-10 082033.png" alt="Logo" onerror="this.src='https://via.placeholder.com/50?text=TGH'">
+            <span>Trần Gia Huy</span>
+        </div>
+        <h1>TRANG CÁ NHÂN SINH VIÊN</h1>
+        <div class="clock" id="digital-clock">00:00:00</div>
+    </header>
+
+    <main class="container">
+        <section class="card profile-section">
+            <div class="avatar-box">
+                <img src="./Screenshot 2026-11-10 082033.png" alt="Ảnh đại diện" id="avatar-img" class="avatar" onerror="this.src='https://via.placeholder.com/180?text=Avatar'">
+                <p class="avatar-note"><i class="fa-solid fa-magnifying-glass-plus"></i> Click để phóng to</p>
+            </div>
+            <div class="info-box">
+                <h2>THÔNG TIN CÁ NHÂN</h2>
+                <ul class="info-list">
+                    <li><strong>Mã sinh viên:</strong> B25DTCN180</li>
+                    <li><strong>Họ và tên:</strong> Trần Gia Huy</li>
+                    <li><strong>Lớp:</strong> D25CQCN08-B</li>
+                    <li><strong>Trường:</strong> Học viện Công nghệ Bưu chính Viễn thông</li>
+                    <li><strong>Email:</strong> dangchoine@gmail.com</li>
+                    <li><strong>Số điện thoại:</strong> 0793732748</li>
+                    <li><strong>Ngày sinh:</strong> 25/12/2006</li>
+                    <li><strong>Giới tính:</strong> Nam</li>
+                    <li><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card work-section">
+            <h2><i class="fa-solid fa-briefcase"></i> CÔNG VIỆC HIỆN TẠI</h2>
+            <div class="work-detail">
+                <h3>Thực tập sinh Lập trình Web</h3>
+                <p class="company"><strong>Cơ quan công tác:</strong> Trung tâm Đào tạo & Phát triển Phần mềm</p>
+                <p class="desc">Tham gia phát triển hệ thống website thương mại điện tử, thiết kế giao diện UI/UX và lập trình các chức năng phía Client-side sử dụng HTML, CSS, JavaScript và C++.</p>
+            </div>
+        </section>
+
+        <section class="card hobbies-section">
+            <h2><i class="fa-solid fa-heart"></i> SỞ THÍCH CÁ NHÂN</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Lập trình</h4>
+                    <p>Tìm hiểu cấu trúc dữ liệu, thuật toán và viết code web.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h4>Chơi game</h4>
+                    <p>Giải trí cùng bạn bè qua các trò chơi đồng đội sau giờ học.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-music"></i>
+                    <h4>Nghe nhạc</h4>
+                    <p>Nghe nhạc Pop và Acoustic giúp tập trung học tập hơn.</p>
+                </div>
+            </div>
+
+            <div id="more-hobbies" class="hobbies-grid hidden">
+                <div class="hobby-item">
+                    <i class="fa-solid fa-camera"></i>
+                    <h4>Chụp ảnh</h4>
+                    <p>Lưu lại khoảnh khắc đẹp khi đi chơi cùng bạn bè.</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fa-solid fa-book"></i>
+                    <h4>Đọc sách</h4>
+                    <p>Đọc các tài liệu về công nghệ và quy trình làm phần mềm.</p>
+                </div>
+            </div>
+
+            <div class="toggle-btn-container">
+                <button id="toggle-hobbies-btn" class="btn">Xem thêm</button>
+            </div>
+        </section>
+
+        <section class="card socials-section">
+            <h2><i class="fa-solid fa-share-nodes"></i> LIÊN KẾT MẠNG XÃ HỘI</h2>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://zalo.me" target="_blank" class="social-btn zalo"><i class="fa-solid fa-comment-dots"></i> Zalo</a>
+                <a href="https://github.com" target="_blank" class="social-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Trần Gia Huy - B25DTCN180</p>
+    </footer>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Ảnh đại diện">
+    </div>
+
+    <script src="B25DTCN180_TRANGIAHUY.js"></script>
+</body>
+</html>
